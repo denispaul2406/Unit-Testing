@@ -1,4 +1,11 @@
 
+multiply(otherFraction) {
+    let productNumerator = this.numerator * otherFraction.numerator;
+    let productDenominator = this.denominator * otherFraction.denominator;
+    return new Fraction(productNumerator, productDenominator);
+  }
+
+
 compare(otherFraction) {
     let thisDecimal = this.numerator / this.denominator;
     let otherDecimal = otherFraction.numerator / otherFraction.denominator;
@@ -29,6 +36,7 @@ add(otherFraction) {
     let commonDenominator = this.denominator * otherFraction.denominator;
     let numeratorDiff = (this.numerator * otherFraction.denominator) - (otherFraction.numerator * this.denominator);
     return new Fraction(numeratorDiff, commonDenominator);
+
 
 
 
